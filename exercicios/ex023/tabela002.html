@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            font-size: 1em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgrey;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        tbody > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
+        td.num {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr> <!-- uma linha só -->
+                <th scope="col">Estado</th> <!-- cabeçalho -->
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">46.649.132	</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.411.923</td>
+            </tr>
+
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.463.349</td>
+            </tr>
+
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.985.284</td>
+            </tr>
+
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11.597.484</td>
+            </tr>
+
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.466.630</td>
+            </tr>
+
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9.674.793</td>
+            </tr>
+
+        </tbody>
+
+        <tfoot>
+            <th scope="row">Total de Habitantes</th>
+            <td class="num">0000</td>
+        </tfoot>
+    </table>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem quo non architecto velit atque, commodi, suscipit quae ducimus delectus sed laudantium? At eos sed nobis dicta accusamus, doloribus aut quasi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa consequatur at distinctio. Explicabo ipsam et, illum blanditiis voluptatem distinctio iste minus facere, repudiandae architecto culpa id consequatur enim porro fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident laudantium animi eos ratione quaerat exercitationem blanditiis iure eligendi voluptates dolorum voluptatum, deleniti, ipsam nisi neque beatae reiciendis, aut corrupti vel? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia sunt iure, odit consequuntur, commodi iste iusto, aspernatur itaque provident magni eum fuga. Eaque perspiciatis nihil quae ab veritatis sequi velit! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate maxime minus ut perspiciatis voluptates eaque eius rerum, dolore molestias fugit nam ipsa aliquam est iusto, unde itaque odit ea dolor! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus non alias aliquid? Laborum placeat esse quibusdam recusandae, architecto, quasi et odio magnam voluptate veniam doloribus, nesciunt nemo earum sunt provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ad nobis eius voluptatem consequatur totam quasi odio at officia repellat, enim, fugiat a dolorum neque, deleniti dignissimos corrupti! Quos, ullam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis accusantium ratione veritatis perspiciatis, nisi quos corrupti recusandae vitae inventore fugit magnam pariatur, illo delectus vero enim molestiae quidem eos neque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt maiores fuga hic iusto culpa aspernatur excepturi, eligendi quis atque? Quae earum perspiciatis mollitia voluptates eaque, eum amet exercitationem beatae facilis!</p>
+
+</body>
+</html>
